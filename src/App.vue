@@ -2,23 +2,28 @@
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
     <h1>Vue</h1>
-    <DataBinding /> 
+    <!-- <DataBinding /> 
+    <Event />
+    <EventModifiers /> -->
+    <KeyModifiers />
   </div>
 </template>
 
 <script>
 
-import DataBinding from './components/DataBinding.vue';
-import Event from './components/Event.vue';
-import EventModifiers from './components/EventModifiers.vue';
+// import DataBinding from './components/DataBinding.vue';
+// import Event from './components/Event.vue';
+// import EventModifiers from './components/EventModifiers.vue';
+import KeyModifiers from './components/KeyModifiers.vue';
 
 export default {
   name: 'App',
   //On fait appel a des méthodes
   components: {
-    DataBinding,
-    Event,
-    EventModifiers
+    // DataBinding,
+    // Event,
+    // EventModifiers,
+    KeyModifiers
   },
   // C'est la partie ou on déclare nos fonctions
   methods: {
