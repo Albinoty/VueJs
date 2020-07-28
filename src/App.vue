@@ -5,7 +5,8 @@
     <!-- <DataBinding /> 
     <Event />
     <EventModifiers /> -->
-    <KeyModifiers />
+    <!-- <KeyModifiers /> -->
+    <VModel />
   </div>
 </template>
 
@@ -14,7 +15,8 @@
 // import DataBinding from './components/DataBinding.vue';
 // import Event from './components/Event.vue';
 // import EventModifiers from './components/EventModifiers.vue';
-import KeyModifiers from './components/KeyModifiers.vue';
+// import KeyModifiers from './components/KeyModifiers.vue';
+import VModel from './components/VModel.vue';
 
 export default {
   name: 'App',
@@ -23,7 +25,8 @@ export default {
     // DataBinding,
     // Event,
     // EventModifiers,
-    KeyModifiers
+    // KeyModifiers,
+    VModel
   },
   // C'est la partie ou on déclare nos fonctions
   methods: {
