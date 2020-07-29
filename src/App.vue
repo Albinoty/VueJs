@@ -8,7 +8,8 @@
     <!-- <KeyModifiers /> -->
     <!-- <VModel />, -->
     <!-- <HtmlBrut /> -->
-    <Computed />
+    <!-- <Computed /> -->
+    <Watch />
   </div>
 </template>
 
@@ -20,7 +21,8 @@
 // import KeyModifiers from './components/KeyModifiers.vue';
 // import VModel from './components/VModel.vue';
 // import HtmlBrut from './components/HtmlBrut.vue';
-import Computed from './components/Computed.vue';
+// import Computed from './components/Computed.vue';
+import Watch from './components/Watch.vue';
 
 export default {
   name: 'App',
@@ -32,7 +34,8 @@ export default {
     // KeyModifiers,
     // VModel,
     // HtmlBrut,
-    Computed
+    // Computed,
+    Watch
   },
   // C'est la partie ou on déclare nos fonctions
   methods: {
