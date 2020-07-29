@@ -9,7 +9,8 @@
     <!-- <VModel />, -->
     <!-- <HtmlBrut /> -->
     <!-- <Computed /> -->
-    <Watch />
+    <!-- <Watch /> -->
+    <ToggleCss />
   </div>
 </template>
 
@@ -22,7 +23,8 @@
 // import VModel from './components/VModel.vue';
 // import HtmlBrut from './components/HtmlBrut.vue';
 // import Computed from './components/Computed.vue';
-import Watch from './components/Watch.vue';
+// import Watch from './components/Watch.vue';
+import ToggleCss from './components/ToggleCss.vue';
 
 export default {
   name: 'App',
@@ -35,7 +37,8 @@ export default {
     // VModel,
     // HtmlBrut,
     // Computed,
-    Watch
+    // Watch,
+    ToggleCss
   },
   // C'est la partie ou on déclare nos fonctions
   methods: {
