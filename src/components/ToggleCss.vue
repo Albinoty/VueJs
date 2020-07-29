@@ -2,21 +2,27 @@
     <div>
         <h2>Toggle CSS</h2>
         <button v-on:click="toggleColor = !toggleColor">Toggle CSS</button>
-        <!-- on attribue la class à appliquer -->
-        <!-- Ici on indique une objet qui applique la class red si toggleColor est true -->
-        <div class="box"
-        v-bind:class="{ red : toggleColor }"
-        ></div>
+        <!-- A la place d'écrire l'objet en question, on peut le faire appel direcrement -->
+        <div class="box" v-bind:class="objCSS"></div>
+        <!-- il est possible d'ajouter un tableau et de faire varier les class css -->
+        <div class="box" v-bind:class="[objCSS, 'bordure']"></div>
     </div>
 </template>
 <script>
 export default {
     data(){
         return {
-            // on declare une propriété qui sera en false
-            toggleColor: false
+            toggleColor: false,
         }
     },
+    computed: {
+        objCSS: function() {
+            return {
+                red: true,
+                box: true
+            }
+        }
+    }
 }
 </script>
 <style>
@@ -28,5 +34,8 @@ export default {
     }
     .red{
         background: red;
+    }
+    .bordure{
+        border: 10px solid blue;
     }
 </style>
