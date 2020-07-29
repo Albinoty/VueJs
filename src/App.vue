@@ -11,7 +11,8 @@
     <!-- <Computed /> -->
     <!-- <Watch /> -->
     <!-- <ToggleCss /> -->
-    <Condition />
+    <!-- <Condition /> -->
+    <Boucle />
   </div>
 </template>
 
@@ -26,7 +27,8 @@
 // import Computed from './components/Computed.vue';
 // import Watch from './components/Watch.vue';
 // import ToggleCss from './components/ToggleCss.vue';
-import Condition from './components/Condition.vue';
+// import Condition from './components/Condition.vue';
+import Boucle from './components/Boucle.vue';
 
 
 export default {
@@ -42,7 +44,8 @@ export default {
     // Computed,
     // Watch,
     // ToggleCss,
-    Condition
+    // Condition,
+    Boucle
   },
   // C'est la partie ou on déclare nos fonctions
   methods: {
