@@ -2,10 +2,10 @@
     <div>
         <h2>Toggle CSS</h2>
         <button v-on:click="toggleColor = !toggleColor">Toggle CSS</button>
-        <!-- A la place d'écrire l'objet en question, on peut le faire appel direcrement -->
-        <div class="box" v-bind:class="objCSS"></div>
-        <!-- il est possible d'ajouter un tableau et de faire varier les class css -->
-        <div class="box" v-bind:class="[objCSS, 'bordure']"></div>
+        <!-- Style appliquer directment dans un objet (camelCase) -->
+        <p :style="{color: 'white', backgroundColor: 'black'}">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, cum?</p>
+        <!-- Appel de la propriétée de style -->
+        <p :style="monStyle">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi, cum?</p>
     </div>
 </template>
 <script>
@@ -13,6 +13,8 @@ export default {
     data(){
         return {
             toggleColor: false,
+            couleur: "lightblue",
+            largeur: 200
         }
     },
     computed: {
@@ -20,6 +22,12 @@ export default {
             return {
                 red: true,
                 box: true
+            }
+        },
+        monStyle: function(){
+            return{
+                backgroundColor: this.couleur,
+                width: this.largeur + "px"
             }
         }
     }
