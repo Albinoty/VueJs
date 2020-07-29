@@ -6,7 +6,8 @@
     <Event />
     <EventModifiers /> -->
     <!-- <KeyModifiers /> -->
-    <VModel />
+    <!-- <VModel />, -->
+    <HtmlBrut />
   </div>
 </template>
 
@@ -16,7 +17,8 @@
 // import Event from './components/Event.vue';
 // import EventModifiers from './components/EventModifiers.vue';
 // import KeyModifiers from './components/KeyModifiers.vue';
-import VModel from './components/VModel.vue';
+// import VModel from './components/VModel.vue';
+import HtmlBrut from './components/HtmlBrut.vue';
 
 export default {
   name: 'App',
@@ -26,7 +28,8 @@ export default {
     // Event,
     // EventModifiers,
     // KeyModifiers,
-    VModel
+    // VModel,
+    HtmlBrut
   },
   // C'est la partie ou on déclare nos fonctions
   methods: {
