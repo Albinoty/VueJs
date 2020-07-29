@@ -10,7 +10,8 @@
     <!-- <HtmlBrut /> -->
     <!-- <Computed /> -->
     <!-- <Watch /> -->
-    <ToggleCss />
+    <!-- <ToggleCss /> -->
+    <Condition />
   </div>
 </template>
 
@@ -24,7 +25,9 @@
 // import HtmlBrut from './components/HtmlBrut.vue';
 // import Computed from './components/Computed.vue';
 // import Watch from './components/Watch.vue';
-import ToggleCss from './components/ToggleCss.vue';
+// import ToggleCss from './components/ToggleCss.vue';
+import Condition from './components/Condition.vue';
+
 
 export default {
   name: 'App',
@@ -38,7 +41,8 @@ export default {
     // HtmlBrut,
     // Computed,
     // Watch,
-    ToggleCss
+    // ToggleCss,
+    Condition
   },
   // C'est la partie ou on déclare nos fonctions
   methods: {
