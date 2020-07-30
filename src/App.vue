@@ -12,7 +12,11 @@
     <!-- <Watch /> -->
     <!-- <ToggleCss /> -->
     <!-- <Condition /> -->
-    <Boucle />
+    <!-- <Boucle /> -->
+    <!-- On passe une donnée à l'enfant -->
+    <Props prenom="Albi" />
+    <!-- Dynamiquement via les données de notre composant -->
+    <Props v-bind:prenom="prenom" />
   </div>
 </template>
 
@@ -28,11 +32,17 @@
 // import Watch from './components/Watch.vue';
 // import ToggleCss from './components/ToggleCss.vue';
 // import Condition from './components/Condition.vue';
-import Boucle from './components/Boucle.vue';
+// import Boucle from './components/Boucle.vue';
+import Props from './components/Props.vue';
 
 
 export default {
   name: 'App',
+  data(){
+    return {
+      prenom: "Albinot"
+    }
+  },
   //On fait appel a des méthodes
   components: {
     // DataBinding,
@@ -45,7 +55,8 @@ export default {
     // Watch,
     // ToggleCss,
     // Condition,
-    Boucle
+    // Boucle,
+    Props
   },
   // C'est la partie ou on déclare nos fonctions
   methods: {
