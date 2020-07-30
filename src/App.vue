@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <h1>Vue</h1>
+    <h1>{{ titre }}</h1>
     <!-- <DataBinding /> 
     <Event />
     <EventModifiers /> -->
@@ -16,7 +16,9 @@
     <!-- On passe une donnée à l'enfant -->
     <Props prenom="Albi" />
     <!-- Dynamiquement via les données de notre composant -->
-    <Props v-bind:prenom="prenom" />
+    <!-- On ecoute l'event qui change titre, et on execute une fonction pour changer le titre -->
+    <!-- En parametre, on recupere l'info recupérer dans l'enfant -->
+    <Props v-bind:prenom="prenom" v-on:changeTitre="changementTitre($event)" />
   </div>
 </template>
 
@@ -40,6 +42,7 @@ export default {
   name: 'App',
   data(){
     return {
+      titre: "Vue",
       prenom: "Albinot"
     }
   },
@@ -60,7 +63,10 @@ export default {
   },
   // C'est la partie ou on déclare nos fonctions
   methods: {
-   
+    // En parametre l'info qui vient de l'enfant
+    changementTitre: function(nvTitre){
+      this.titre = nvTitre;
+    }
   }
 }
 </script>
