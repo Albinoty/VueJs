@@ -1,6 +1,6 @@
 # Tuto VueJs
 
-Le repo de permet de voir comment fonctionne VueJs via un cours
+Le repo permet de voir comment fonctionne VueJs via un cours
 
 
 ## Project setup
